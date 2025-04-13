@@ -1,10 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-
-	fmt.Println("Fetching user data...")
+	fmt.Println()
 }

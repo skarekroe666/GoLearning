@@ -11,12 +11,12 @@ func SelectEx() {
 	chan2 := make(chan string)
 
 	go func() {
-		time.Sleep(200 * time.Second)
+		time.Sleep(200 * time.Millisecond)
 		chan1 <- "hello bitch"
 	}()
 
 	go func() {
-		time.Sleep(250 * time.Second)
+		time.Sleep(250 * time.Millisecond)
 		chan2 <- "yo skarekroe"
 	}()
 

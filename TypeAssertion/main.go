@@ -23,7 +23,6 @@ func main() {
 	} else {
 		fmt.Println("Name is not a string")
 	}
-
 }
 
 func typeCheck(a any) {
