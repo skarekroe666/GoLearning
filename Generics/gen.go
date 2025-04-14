@@ -10,7 +10,7 @@ func main() {
 		b: 20,
 	}
 
-	fmt.Println(add(sum.a, sum.b))
+	fmt.Println("Sum of numbers is", add(sum.a, sum.b))
 }
 
 type Nums[T any] struct {

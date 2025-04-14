@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	go count()
-	count()
-}
-func count() {
-	for i := 1; i < 6; i++ {
-		time.Sleep(300 * time.Millisecond)
-		fmt.Println(i)
+	for i := 1; i <= 10; i++ {
+		go count(i)
 	}
+
+	time.Sleep(500 * time.Millisecond)
+}
+func count(i int) {
+	fmt.Println(i)
 }
